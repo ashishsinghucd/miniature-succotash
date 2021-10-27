@@ -1,0 +1,10 @@
+.git
+.idea
+.DS_Store
+stats
+__pycache__/
+pytorch/CRNN/models/
+./tools/checkpoints/
+/home/ashish/PycharmProjects/slowfast/tools/checkpoints/
+build/
+trained_weights/
