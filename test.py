@@ -123,8 +123,8 @@ if __name__ == '__main__':
     #       weight_path='/home/ashish/PycharmProjects/train_test_MP/trained_weights/0_40.0000_1.3746.pt',
     #       data_path='/home/ashish/Downloads/FullMP/')
 
-    start(32, 2, model_config="/home/ashish/Projects/train_test_MP/configs/pytorchvideo/SLOWFAST_NLN_4x16_R50.yaml",
-          weight_path='/home/ashish/Projects/train_test_MP/trained_weights/9_94.0000_0.8007.pt', batch_size=10,
+    start(32, 2, model_config="/home/ashish/Projects/train_test_MP/configs/SLOWFAST_NLN_4x16_R50.yaml",
+          weight_path='/home/ashish/Projects/train_test_MP/trained_weights/9_94.0000_0.8007.pt', batch_size=20,
           data_path='/home/ashish/Results/Datasets/HPE2/FullMP/')
 
     # start(32, 2, model_config="/home/ashish/Projects/train_test_MP/configs/pytorchvideo/SLOWFAST_4x16_R50.yaml",

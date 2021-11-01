@@ -34,14 +34,16 @@ class MP_dataset(Dataset):
         if mode == "train":
             self.transforms = T.Compose([ToTensorVideo(), NormalizeVideo([0.45, 0.45, 0.45], [0.225, 0.225, 0.225])])
             self.spatial_idx = -1
-            self.size_config = (cfg.DATA.TRAIN_JITTER_SCALES[0], cfg.DATA.TRAIN_JITTER_SCALES[1],
-                                cfg.DATA.TRAIN_CROP_SIZE)  # (356, 446, 312)#(256, 320, 224)
+            self.size_config = (256, 256, 256)
+            # self.size_config = (cfg.DATA.TRAIN_JITTER_SCALES[0], cfg.DATA.TRAIN_JITTER_SCALES[1],
+            #                     cfg.DATA.TRAIN_CROP_SIZE)  # (356, 446, 312)#(256, 320, 224)
             self.random_flip = cfg.DATA.RANDOM_FLIP
         elif mode == 'val':
             self.transforms = T.Compose([ToTensorVideo(), NormalizeVideo([0.45, 0.45, 0.45], [0.225, 0.225, 0.225])])
             self.spatial_idx = -1
-            self.size_config = (cfg.DATA.TRAIN_JITTER_SCALES[0], cfg.DATA.TRAIN_JITTER_SCALES[1],
-                                cfg.DATA.TRAIN_CROP_SIZE)  # (356, 446, 312)#(256, 320, 224)
+            self.size_config = (256, 256, 256)
+            # self.size_config = (cfg.DATA.TRAIN_JITTER_SCALES[0], cfg.DATA.TRAIN_JITTER_SCALES[1],
+            #                     cfg.DATA.TRAIN_CROP_SIZE)  # (356, 446, 312)#(256, 320, 224)
             self.random_flip = cfg.DATA.RANDOM_FLIP
         elif mode == 'test':
             self.transforms = T.Compose([ToTensorVideo(), NormalizeVideo([0.45, 0.45, 0.45], [0.225, 0.225, 0.225])])

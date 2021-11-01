@@ -163,7 +163,7 @@ if __name__ == '__main__':
     #       data_path='/home/ashish/Downloads/FullMP/')
 
     # ################# Slowfast NLN
-    start(32, 2, model_config="/home/ashish/Projects/train_test_MP/configs/pytorchvideo/SLOWFAST_NLN_4x16_R50.yaml",
+    start(32, 2, model_config="/home/ashish/Projects/train_test_MP/configs/SLOWFAST_NLN_4x16_R50.yaml",
           weight_path='/home/ashish/Projects/pretrained/SLOWFAST_4x16_R50.pyth', batch_size=5, epoch=10,
           data_path='/home/ashish/Results/Datasets/HPE2/FullMP/')
 
